@@ -1,0 +1,130 @@
+.product-list {
+  display: flex;
+  a {
+    color:black;
+    font-size: 32px;
+    padding: 24px 0px;
+    text-align: center;
+    @include pad() {
+      font-size: 24px;
+      padding: 16px 0px;
+    }
+    @include phone() {
+      font-size: 16px;
+    }
+  }
+  li {
+    width: 33%;
+    border: 1px solid #DCDCDC;
+  }
+  li:hover {
+    border-bottom: 4px solid $primary;
+  }
+}
+.product-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  img {
+    width: 50%;
+  }
+}
+.glasses-title {
+  font-size: 42px;
+  text-align: center;
+}
+.glasses-text {
+  font-size: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.pro-list {
+  margin-right: -12px;
+  margin-left: -12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 80px;
+  @include pad() {
+    justify-content: center;
+  }
+  @include phone() {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+.pro-item-list {
+  max-width: 25%;
+  margin-bottom: 80px;
+  margin-right: 12px;
+  margin-left: 12px;
+  @include pad() {
+    max-width: 50%;
+  }
+  @include phone() {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  img {
+    max-width: 306px;
+    display: block;
+    @include pad() {
+      max-width: 336px;
+    }
+    @include phone() {
+      max-width: 348px;
+    }
+  }
+  .pro-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .pro-text {
+      font-size: 24px;
+    }
+    .pro-price {
+      font-size: 24px;
+      color: $primary;
+    }
+  }
+  .color-select {
+    display: flex;
+    .pro-brown {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      background: $warning;
+      margin-right: 8px;
+    }
+    .pro-orange {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      background: $block;
+    }
+  }
+}
+
+.pages-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  .pages-item {
+    border: 1px solid $border_page;
+    padding: 12px 16px;
+    color: $border_page;
+    font-size: 18px;
+  }
+  .page-upordown {
+    border: 1px solid $border_page;
+    padding: 11px 12px;
+    font-size: 19px;
+    color: $border_page;
+  }
+  .page-two {
+    background: #000;
+    color: white;
+  }
+}

@@ -1,3 +1,319 @@
-.index-title {
-  font-size: 100px;
+.banner {
+  background: url("/assets/images/home-header.png") center center no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+  @include phone() {
+    background: url("/assets/images/home-header-sm.png") center no-repeat;
+  }
+  .bannertext {
+    height: 100%;
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+      p {
+      font-size: 36px;
+      color: $primary_second;
+      @include phone() {
+        font-size: 16px;
+      }
+    }
+    h1 {
+      font-size: 64px;
+      color: $primary_second;
+      margin-bottom: 4px;
+      font-weight: bold;
+      @include phone() {
+        font-size: 24px;
+      }
+    }
+    a {
+      padding: 6px 12px;
+      background: $primary_second;
+    }
+    a:hover {
+      font-weight: bold;
+      background: #000;
+    }
+  }
 }
+// 用專業的心，做專業的事
+.probg {
+  background: $success;
+  padding: 80px 80px;
+}
+.protitle {
+  font-size: 48px;
+  color: $primary_second;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: bold;
+  @include phone() {
+    font-size: 24px;
+  }
+}
+.prolist {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0px -12px;
+  @include pad() {
+    flex-wrap: wrap;
+  }
+  @include phone() {
+    font-size: 24px;
+  }
+  .prolist-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 0px 12px;
+    @include pad() {
+      width: 50%;
+      margin-bottom: 60px;
+    }
+    @include phone() {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    .prolisttitle {
+      color: $primary_second;
+      font-size: 24px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .proprice {
+      background: url("/assets/images/home-section2-1.png") center center no-repeat;
+      background-size: cover;
+      @include bg-hidden;
+      width: 83px;
+      height: 83px;
+      margin-bottom: 24px;
+    }
+    .proclock {
+      background: url("/assets/images/home-section2-2.png") center center no-repeat;
+      background-size: cover;
+      @include bg-hidden;
+      width: 83px;
+      height: 83px;
+      margin-bottom: 24px;
+    }
+    .proheart {
+      background: url("/assets/images/home-section2-3.png") center center no-repeat;
+      background-size: cover;
+      @include bg-hidden;
+      width: 83px;
+      height: 83px;
+      margin-bottom: 24px;
+    }
+    .proglasses {
+      background: url("/assets/images/home-sectioin2-4.png") center center no-repeat;
+      background-size: cover;
+      @include bg-hidden;
+      width: 83px;
+      height: 83px;
+      margin-bottom: 24px;
+    }
+  }
+}
+// 經典系列鏡框
+.classic {
+  padding: 80px 80px;
+  @include pad() {
+    margin-bottom: -24px;
+  }
+  .classictitle {
+    font-size: 48px;
+    color: $primary_second;
+    margin-bottom: 48px;
+    text-align: center;
+    font-weight: bold;
+    @include phone() {
+      font-size: 24px;
+    }
+  }
+  .classiclist {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -12px;
+    margin-right: -12px;
+    @include pad() {
+      flex-direction: column;
+      align-items: center;
+    }
+    .classic-item {
+      max-width: 416px;
+      height: auto;
+      margin: 0px 12px;
+      @include pad() {
+        max-width: 336px;
+        margin-bottom: 24px;
+      }
+      @include phone() {
+        max-width: 348px;
+      }
+    }
+    .classictext {
+      font-size: 48px;
+      color: $primary;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+// 聯名設計鏡框
+.design {
+  background: url("/assets/images/index-bg.png") center center no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 80px 0px;
+}
+.designtitle {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 48px;
+  text-align: center;
+  @include phone() {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.designlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include pad() {
+    flex-direction: column;
+  }
+  .double{
+    width: 50%;
+    @include pad() {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+  .youth {
+    width: 50%;
+    @include pad() {
+      width: 100%;
+    }
+  }
+  .designtext {
+    font-size: 48px;
+    color: $primary;
+    padding: 8px 0px;
+    background: white;
+    width: 100%;
+    text-align: center;
+  }
+}
+// 顧客推薦
+.recommend {
+  padding: 80px 0px;
+  @include pad() {
+    margin-bottom: -24px;
+  }
+  @include phone() {
+    margin-bottom: -16px;
+  }
+  .recommendtitle {
+    font-size: 48px;
+    color: $primary;
+    margin-bottom: 48px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .recommendlist {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include pad() {
+      flex-wrap: wrap;
+    }
+    .recommend-item {
+      max-width: 25%;
+      margin-right: 12px;
+      margin-left: 12px;
+      border: 1px solid #DEE2E6;
+      border-radius: 4px;
+      box-shadow: 4px 4px 8px 0 #DEE2E6;
+      @include pad() {
+        max-width: 47%;
+        margin-bottom: 24px;
+      }
+      @include phone() {
+        max-width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+    .recommendtext {
+      padding: 16px 16px;
+      .recommendname {
+        margin-bottom: 8px;
+      }
+      .recommenddate {
+        font-size: 14px;
+        color: $danger;
+        margin-top: 72px;
+      }
+    }
+  }
+}
+// 聯絡我們
+.contactbg {
+  background: $success;
+  padding: 80px 0px;
+}
+.contacttitle {
+  font-size: 48px;
+  color: $primary_second;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.contact-list {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  @include phone() {
+    width: 100%;
+  }
+  .contact-text {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .input-block {
+    margin-bottom: 16px;
+  }
+  .contact-input {
+    margin-bottom: 8px;
+  }
+  .input-text {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    width: 100%;
+  }
+  .input-feedback {
+    padding-top: 6px;
+    padding-left: 12px;
+    height: 136px;
+    width: 100%;
+  }
+  .check-input {
+    margin-right: 4px;
+  }
+  .check {
+    margin-bottom: 48px;
+  }
+  .contact-btn {
+    color: white;
+    background: $primary;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+  }
+}
+

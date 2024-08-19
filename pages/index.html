@@ -4,13 +4,175 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>周周-2024 切版直播班-第三、四週主線任務</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+    <section class="banner">
+      <div class="container bannertext">
+          <p>Promise-Desert 2020 早春系列</p>
+          <h1>看得清，才能看得遠</h1>
+          <a href="./glasses.html">立即購買</a>
+      </div>
+    </section>
+    <!-- 用專業的心，做專業的事 -->
+    <section class="probg">
+      <div class="container">
+        <h2 class="protitle">用專業的心，做專業的事</h2>
+        <ul class="prolist">
+          <li class="prolist-item">
+            <div class="proprice">proprice</div>
+            <p class="prolisttitle">單一價格</p>
+            <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+          </li>
+          <li class="prolist-item">
+            <div class="proclock">proclock</div>
+            <p class="prolisttitle">20 分鐘即可取件</p>
+            <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+          </li>
+          <li class="prolist-item">
+            <div class="proheart">proheart</div>
+            <p class="prolisttitle">安心售後服務</p>
+            <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+          </li>
+          <li class="prolist-item">
+            <div class="proglasses">proglasses</div>
+            <p class="prolisttitle">單一價格</p>
+            <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 經典系列鏡框 -->
+    <section class="container classic">
+      <h2 class="classictitle">經典系列鏡框</h2>
+      <ul class="classiclist">
+        <li class="classic-item">
+          <img src="/assets/images/home-section3-1.png" alt="OPTICAL">
+          <p class="classictext">OPTICAL</p>
+        </li>
+        <li class="classic-item">
+          <img src="/assets/images/home-section3-2.png" alt="SUNGLASSES">
+          <p class="classictext">SUNGLASSES</p>
+        </li>
+        <li class="classic-item">
+          <img src="/assets/images/home-section3-3.png" alt="FUNCTIONAL">
+          <p class="classictext">FUNCTIONAL</p>
+        </li>
+      </ul>
+    </section>
+    <!-- 聯名設計鏡框 -->
+    <section class="design">
+      <div class="container">
+        <h2 class="designtitle">聯名設計鏡框</h2>
+        <div class="designlist">
+          <div class="double">
+            <img src="/assets/images/home-section4-1.png" alt="DOUBLE A+">
+            <p class="designtext">DOUBLE A+</p>
+          </div>
+          <div class="youth">
+            <img src="/assets/images/home-section4-2.png" alt="YOUTH">
+            <p class="designtext">YOUTH</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 顧客推薦 -->
+    <section class="container recommend">
+      <h2 class="recommendtitle">顧客推薦</h2>
+      <ul class="recommendlist">
+        <li class="recommend-item">
+          <img src="/assets/images/home-section5-1.png" alt="Jessy">
+          <div class="recommendtext">
+            <div>
+              <p class="recommendname">Jessy</p>
+              <p>眼鏡品質優良，下次還會想來這邊購買！</p>
+            </div>
+            <p class="recommenddate">2021/06/20</p>
+          </div>
+        </li>
+        <li class="recommend-item">
+          <img src="/assets/images/home-section5-2.png" alt="Jessy">
+          <div class="recommendtext">
+            <div>
+              <p class="recommendname">凱倫</p>
+              <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+            </div>
+            <p class="recommenddate">2021/04/18</p>
+          </div>
+        </li>
+        <li class="recommend-item">
+          <img src="/assets/images/home-section5-3.png" alt="Jessy">
+          <div class="recommendtext">
+            <div>
+              <p class="recommendname">悠悠</p>
+              <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+            </div>
+            <p class="recommenddate">2020/12/25</p>
+          </div>
+        </li>
+        <li class="recommend-item">
+          <img src="/assets/images/home-section5-4.png" alt="Jessy">
+          <div class="recommendtext">
+            <div>
+              <p class="recommendname">Kyuan</p>
+              <p>服務很好，品質沒有任何問題，非常喜歡。</p>
+            </div>
+            <p class="recommenddate">2020/10/31</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section class="contactbg">
+      <div class="container">
+        <h2 class="contacttitle">聯絡我們</h2>
+        <div class="contact-list">
+          <p class="contact-text">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+          </p>
+          <form action="">
+            <ul>
+              <li class="input-block">
+                <label for="contact-name" class="contact-input">姓名</label>
+                <div>
+                  <input type="text" class="input-text" id="contact-name" placeholder="陳小明">
+                </div>
+              </li>
+              <li class="input-block">
+                <label for="contact-tel" class="contact-input">聯絡電話</label>
+                <div>
+                  <input type="tel+:0912-345-678" class="input-text" id="contact-tel" placeholder="0912-345-678">
+                </div>
+              </li>
+              <li class="input-block">
+                <label for="contact-email" class="contact-input">電子郵件</label>
+                <div>
+                  <input type="email" class="input-text" id="contact-email" placeholder="example@email.com">
+                </div>
+              </li>
+              <li class="input-block">
+                <label for="contact-feedback" class="contact-input">意見反應</label>
+                <div>
+                  <input type="text" class="input-feedback" id="contact-feedback" placeholder="請輸入您的意見">
+                </div>
+              </li>
+              <li class="check">
+                <input class="check-input" type="checkbox" value="" id="check-input">
+                <label class="check-label" for="check-input">
+                  我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+                </label>
+              </li>
+              <li class="btn">
+                <input class="contact-btn" type="button" value="確認送出">
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <%- include('./layout/footer'); -%>
 

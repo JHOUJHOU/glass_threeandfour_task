@@ -1,4 +1,121 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  padding-top: 48px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  @include phone() {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+.footerList {
+  border-bottom: 1px solid $info;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: $margin-base * 2;
+}
+.footermenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $margin-base * 2.25;
+  @include phone() {
+    justify-content: flex-start;
+    display: none;
+  }
+  a {
+    padding: 10px 32px;
+    font-size: $fz-base;
+  }
+  a:hover {
+    font-weight: bold;
+  }
+}
+.contact {
+  margin-bottom: $margin-base * 2;
+  @include phone() {
+    margin-bottom: $margin-base * 1.5;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    a {
+      font-size: $fz-36;
+      @include phone() {
+        font-size: $fz-base;
+      }
+    }
+    a:hover {
+      font-weight: bold;
+    }
+  }
+  .material-symbols-outlined {
+    color: $info;
+    margin-right: $margin-base;
+    padding: 6px 6px;
+    font-size: $fz-48;
+    @include phone() {
+      font-size: $fz-base;
+      margin-right: 11px;
+    }
+  }
+}
+.community {
+  display: flex;
+  justify-content: space-between;
+  li {
+    margin-right: $margin-base * 2;
+    @include phone() {
+      margin-right: 11px;
+    }
+  }
+  .communityIcon {
+    width: 48px;
+    height: 48px;
+    @include pad() {
+      width: 40px;
+      height: 40px;
+    }
+    @include phone() {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.communityIcon:hover {
+  box-shadow: 0px 0px 16px 3px white;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include phone() {
+    flex-wrap: wrap;
+  }
+  .copyrighttext {
+    font-size: $fz-base;
+    color: $info;
+    @include phone() {
+      margin-bottom: $margin-base * 0.5;
+    }
+  }
+  .policyList {
+    font-size: $fz-14;
+    display: flex;
+    justify-content: space-between;
+    @include phone() {
+      font-size: $fz-base;
+      flex-direction: column;
+    }
+    a:hover {
+      font-weight: bold;
+    }
+    .policy {
+      margin-right: $margin-base *3;
+      @include phone() {
+        margin-bottom: $margin-base * 0.5;
+      }
+    }
+  }
 }

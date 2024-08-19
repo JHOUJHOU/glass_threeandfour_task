@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+  @include phone(){
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include phone() {
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+        border: 1px solid $info;
+        text-align: center;
+      }
+    }
+    a {
+      padding: 10px 32px;
+      font-size: $fz-20;
+      @include phone() {
+        font-size: $fz-base;
+      }
+    }
+    a:hover {
+      font-weight: bold;
+    }
+  }
+}
+.logo {
+  @include phone() {
+    margin-bottom: $margin-base;
+  }
+}
+.logo_img {
+  width: 80px;
+  height: 48px;
+  @include phone(){
+    margin-left: 15px;
+  }
+}

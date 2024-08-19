@@ -1,5 +1,74 @@
+// color
 $primary: #AA0601;
 $secondary: #000000;
-$info: #FBF2F2;
+$success: #FBF2F2;
+$info:#FFFFFF;
+$danger:#707070;
+
+$warning:#5F3E2D;
+$block: #B75929;
+
+$border_page:#555555;
+$down_page: #F2F2F2;
+
+$site:#495057;
+$site_intro: #00000020;
+
+$primary_second: #650300;
+
+// font-size 
+$fz-base: 1rem;     // 16px
+$fz-14: $fz-base * 0.875; // 14px
+$fz-18: $fz-base * 1.125;   // 18px
+$fz-20: $fz-base * 1.25;   // 20px
+$fz-24: $fz-base * 1.5;     // 24px  
+$fz-32: $fz-base * 2;   // 32px
+$fz-36: $fz-base * 2.25;   // 36px
+$fz-42: $fz-base * 2.625;   // 42px
+$fz-48: $fz-base * 3;   // 48px
+$fz-64: $fz-base * 4;   // 64px
+
+// line-height
+$lh-base: 1.5;
+
+// 特別文字大小、航高
+.fz-19-29 {
+  font-size: 19px;
+  line-height: 29px;
+}
+.fz-18-26 {
+  font-size: 18px;
+  line-height: 26px;
+}
+.fz-19-27 {
+  font-size: 19px;
+  line-height: 27px;
+}
+
+// margin
+$margin-base: 1rem;
 
 
+
+// margin
+$padding-base: 1rem;
+
+// photo to font
+@mixin bg-hidden{
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// grid
+
+@mixin pad {
+	@media (max-width: 992px) {
+		@content;
+	}
+}
+@mixin phone {
+	@media (max-width: 576px) {
+		@content;
+	}
+}
